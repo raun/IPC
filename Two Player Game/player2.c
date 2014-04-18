@@ -50,6 +50,7 @@ int main(){
 			*shm_state=5;
 			if(score>500){
 				printf("Player 2 won...");
+				*shm_state=7;
 				shmdt(shm_state);
 				exit(0);
 			}
