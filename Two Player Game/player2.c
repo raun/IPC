@@ -23,7 +23,8 @@ int main(){
 	*shm_state=0;
 	while(1){
 		while((*shm_state>=0)&&(*shm_state<3)){
-			printf("\nWaiting for player 1 \n");
+			printf("\nWaiting for player 1 ");
+			printf("\nScore : %d",score);
 			sleep(2);
 			if(*shm_state==7){
 				shmdt(shm_state);
